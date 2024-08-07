@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(0, 0, 4);
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 0 20px;
+  }
+  nav ul li a{
+   text-decoration: none;
+   color: white;
+  }
+  nav ul li a:hover{
+   color: rgb(150, 150, 233);
+   font-size: 1.1rem;
+   font-weight: bold;
+  }
+  .left{
+    font-size: 1.5rem;
+  }
+  .firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    align-items: center;
+  }
+  .firstSection > div{
+    width: 40%;
+  }
+  .rightSection img{
+    width: 80%;
+  }
+  .leftSection{
+    font-size: 3rem;
+  }
+  .purple{
+    color: #8e49e8;
+  }
+  #element{
+    color: #8e49e8;
+  }
+  .secondSection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(18, 18, 62, 0.1);
+    border-radius: 10px;
+  }
+  
+  .secondSection h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .box {
+    background: transparent;
+    width: 100%;
+    margin: 56px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .vertical {
+    height: auto;
+    border-left: 2px solid #8e49e8;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .image-top {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-top img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .vertical-title {
+    font-size: 1.2rem;
+    color: #8e49e8;
+    margin-bottom: 10px;
+  }
+  
+  .vertical-desc {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .vertical-desc ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .footer {
+    background-color: rgb(18, 18, 62);
+    color: #fff;
+    padding: 60px 0 30px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px 30px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    color: #8e49e8;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #8e49e8;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #8e49e8;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #8e49e8;
+    transform: translateY(-3px);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  }
+  .aboutSection {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.aboutContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profileImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutText p {
+    margin-bottom: 15px;
+}
+
+/* Projects page styles */
+.projectsSection {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.projectCard {
+    background-color: rgba(18, 18, 62, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projectCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.projectLink {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 20px;
+}
+.contactSection {
+    padding: 20px; /* Add padding to the section for overall spacing */
+}
+
+.contactContent {
+    max-width: 800px; /* Set a maximum width for the form container */
+    margin: 0 auto; /* Center the form container horizontally */
+    padding: 20px; /* Add padding inside the form container */
+    background-color: rgb(0, 0, 4); /* Light background color for better visibility */
+    border-radius: 8px; /* Rounded corners for the form container */
+}
+
+.contactSection h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contactForm input,
+.contactForm textarea {
+    border: 1px solid #ccc; /* Added border for input fields */
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures border doesn't affect width */
+}
+
+.contactForm input:hover,
+.contactForm textarea:hover {
+    border: 1px solid #8e49e8; /* Highlight on hover */
+}
+
+.submit-btn {
+    background-color: #8e49e8; /* Your desired color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

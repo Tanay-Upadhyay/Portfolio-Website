@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanay - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Tanay's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Tanay</span>
+                <div>and I am a passionate</div>
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.webp" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="image-top">
+                        <img src="eg.webp" alt="SQL Icon">
+                    </div>
+                    <div class="vertical-title">
+                        SQL Developer Intern (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        During my one-month internship as an SQL Developer at Maruti Suzuki, I focused on database management and optimization. My primary tasks involved:
+                        <ul>
+                            <li>Writing and optimizing SQL queries for various business intelligence reports</li>
+                            <li>Assisting in the maintenance and troubleshooting of existing database systems</li>
+                            <li>Collaborating with cross-functional teams to understand and implement data requirements</li>
+                            <li>Learning about data security measures and best practices in the automotive industry</li>
+                            <li>Gaining hands-on experience with large-scale database systems used in automotive manufacturing</li>
+                            <li>Participating in daily stand-ups and contributing to team projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: tanayupadhyay16@gmail.com</p>
+                <p>Phone: +91 7985363887</p>
+                <p>Location: Vellore, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="projects.html">Projects</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tanay-upadhyay/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Tanay-Upadhyay" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/upadhyay923" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Tanay Upadhyay. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'SQL Developer', 'AI ML Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>
